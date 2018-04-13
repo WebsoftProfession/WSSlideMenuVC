@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WSMenuViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -17,6 +17,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UINavigationController *nav=[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"mainNavigation"];
+    
+    WSMenuViewController *wsMenuVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"WSMenuViewController"];
+    
+    wsMenuVC.leftViewController =[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LeftVC"];
+    
+    wsMenuVC.rightViewController =[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"RightVC"];
+    
+    [nav setViewControllers:@[[[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"HomeVC"]]];
+    
+    wsMenuVC.homeViewController = nav;
+    wsMenuVC.drawerWidth = 260;
+    [self.window setRootViewController:wsMenuVC];
     return YES;
 }
 

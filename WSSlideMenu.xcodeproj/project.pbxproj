@@ -15,6 +15,13 @@
 		8409CC842080B85400DA5763 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8409CC832080B85400DA5763 /* main.m */; };
 		8409CC8E2080B85500DA5763 /* WSSlideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8409CC8D2080B85500DA5763 /* WSSlideMenuTests.m */; };
 		8409CC992080B85500DA5763 /* WSSlideMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8409CC982080B85500DA5763 /* WSSlideMenuUITests.m */; };
+		8409CCAB2080B8A400DA5763 /* WSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8409CCA72080B8A300DA5763 /* WSMenuViewController.m */; };
+		8409CCAC2080B8A400DA5763 /* UIViewController+WSMenuViewControllerExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8409CCAA2080B8A300DA5763 /* UIViewController+WSMenuViewControllerExtend.m */; };
+		8409CCB62080B8C900DA5763 /* ListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8409CCAD2080B8C700DA5763 /* ListVC.m */; };
+		8409CCB72080B8C900DA5763 /* bird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8409CCAE2080B8C700DA5763 /* bird.jpg */; };
+		8409CCB82080B8C900DA5763 /* RightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8409CCAF2080B8C700DA5763 /* RightVC.m */; };
+		8409CCB92080B8C900DA5763 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8409CCB12080B8C700DA5763 /* HomeVC.m */; };
+		8409CCBA2080B8C900DA5763 /* LeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8409CCB42080B8C800DA5763 /* LeftVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,19 @@
 		8409CC942080B85500DA5763 /* WSSlideMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSSlideMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8409CC982080B85500DA5763 /* WSSlideMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSSlideMenuUITests.m; sourceTree = "<group>"; };
 		8409CC9A2080B85500DA5763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8409CCA72080B8A300DA5763 /* WSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSMenuViewController.m; sourceTree = "<group>"; };
+		8409CCA82080B8A300DA5763 /* WSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSMenuViewController.h; sourceTree = "<group>"; };
+		8409CCA92080B8A300DA5763 /* UIViewController+WSMenuViewControllerExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WSMenuViewControllerExtend.h"; sourceTree = "<group>"; };
+		8409CCAA2080B8A300DA5763 /* UIViewController+WSMenuViewControllerExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WSMenuViewControllerExtend.m"; sourceTree = "<group>"; };
+		8409CCAD2080B8C700DA5763 /* ListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListVC.m; sourceTree = "<group>"; };
+		8409CCAE2080B8C700DA5763 /* bird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bird.jpg; sourceTree = "<group>"; };
+		8409CCAF2080B8C700DA5763 /* RightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightVC.m; sourceTree = "<group>"; };
+		8409CCB02080B8C700DA5763 /* LeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftVC.h; sourceTree = "<group>"; };
+		8409CCB12080B8C700DA5763 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		8409CCB22080B8C800DA5763 /* ListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListVC.h; sourceTree = "<group>"; };
+		8409CCB32080B8C800DA5763 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		8409CCB42080B8C800DA5763 /* LeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftVC.m; sourceTree = "<group>"; };
+		8409CCB52080B8C800DA5763 /* RightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +121,20 @@
 		8409CC732080B85400DA5763 /* WSSlideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				8409CCA62080B88D00DA5763 /* WSSlideMenuClass */,
 				8409CC742080B85400DA5763 /* AppDelegate.h */,
 				8409CC752080B85400DA5763 /* AppDelegate.m */,
 				8409CC772080B85400DA5763 /* ViewController.h */,
 				8409CC782080B85400DA5763 /* ViewController.m */,
+				8409CCAE2080B8C700DA5763 /* bird.jpg */,
+				8409CCB32080B8C800DA5763 /* HomeVC.h */,
+				8409CCB12080B8C700DA5763 /* HomeVC.m */,
+				8409CCB02080B8C700DA5763 /* LeftVC.h */,
+				8409CCB42080B8C800DA5763 /* LeftVC.m */,
+				8409CCB22080B8C800DA5763 /* ListVC.h */,
+				8409CCAD2080B8C700DA5763 /* ListVC.m */,
+				8409CCB52080B8C800DA5763 /* RightVC.h */,
+				8409CCAF2080B8C700DA5763 /* RightVC.m */,
 				8409CC7A2080B85400DA5763 /* Main.storyboard */,
 				8409CC7D2080B85400DA5763 /* Assets.xcassets */,
 				8409CC7F2080B85400DA5763 /* LaunchScreen.storyboard */,
@@ -130,6 +160,17 @@
 				8409CC9A2080B85500DA5763 /* Info.plist */,
 			);
 			path = WSSlideMenuUITests;
+			sourceTree = "<group>";
+		};
+		8409CCA62080B88D00DA5763 /* WSSlideMenuClass */ = {
+			isa = PBXGroup;
+			children = (
+				8409CCA82080B8A300DA5763 /* WSMenuViewController.h */,
+				8409CCA72080B8A300DA5763 /* WSMenuViewController.m */,
+				8409CCA92080B8A300DA5763 /* UIViewController+WSMenuViewControllerExtend.h */,
+				8409CCAA2080B8A300DA5763 /* UIViewController+WSMenuViewControllerExtend.m */,
+			);
+			path = WSSlideMenuClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8409CCB72080B8C900DA5763 /* bird.jpg in Resources */,
 				8409CC812080B85400DA5763 /* LaunchScreen.storyboard in Resources */,
 				8409CC7E2080B85400DA5763 /* Assets.xcassets in Resources */,
 				8409CC7C2080B85400DA5763 /* Main.storyboard in Resources */,
@@ -265,8 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8409CCB82080B8C900DA5763 /* RightVC.m in Sources */,
+				8409CCB62080B8C900DA5763 /* ListVC.m in Sources */,
+				8409CCAB2080B8A400DA5763 /* WSMenuViewController.m in Sources */,
+				8409CCBA2080B8C900DA5763 /* LeftVC.m in Sources */,
 				8409CC792080B85400DA5763 /* ViewController.m in Sources */,
 				8409CC842080B85400DA5763 /* main.m in Sources */,
+				8409CCB92080B8C900DA5763 /* HomeVC.m in Sources */,
+				8409CCAC2080B8A400DA5763 /* UIViewController+WSMenuViewControllerExtend.m in Sources */,
 				8409CC762080B85400DA5763 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
